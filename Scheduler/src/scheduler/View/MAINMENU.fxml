@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduler.Controller.MainMenuController">
+   <children>
+      <Button id="manageCustomers" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="306.0" prefWidth="280.0" text="Manage Customers" />
+      <Button id="manageAppointments" layoutX="306.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="306.0" prefWidth="280.0" text="Manage Appointments" />
+      <Button layoutX="165.0" layoutY="328.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="135.0" text="Types/Month" id="typesPerMonth" onAction="#handleButtonAction"/>
+      <Button layoutX="306.0" layoutY="328.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="135.0" text="Each Consultant" id="consultants" onAction="#handleButtonAction"/>
+      <Button layoutX="445.0" layoutY="328.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="135.0" text="Appts/Month" id="appointmentsPerMonth" onAction="#handleButtonAction"/>
+      <Label layoutX="14.0" layoutY="328.0" prefHeight="64.0" prefWidth="129.0" text="Generate report by:" />
+   </children>
+</AnchorPane>

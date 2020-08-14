@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduler.Controller.CustomerController">
+   <children>
+      <Label fx:id="addCustomerLabel" layoutX="14.0" layoutY="14.0" text="Add Customer">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="170.0" text="Full Name" />
+      <Label layoutX="148.0" layoutY="210.0" text="Primary Address" />
+      <Label layoutX="148.0" layoutY="250.0" text="Secondary Address" />
+      <Label layoutX="148.0" layoutY="290.0" text="City" />
+      <Label layoutX="148.0" layoutY="330.0" text="Country" />
+      <Label layoutX="148.0" layoutY="370.0" text="Zipcode" />
+      <Label layoutX="148.0" layoutY="410.0" text="Phone Number" />
+      <TextField fx:id="nameField" layoutX="294.0" layoutY="165.0" prefHeight="31.0" prefWidth="260.0" />
+      <TextField fx:id="addrField" layoutX="294.0" layoutY="205.0" prefHeight="31.0" prefWidth="260.0" />
+      <TextField fx:id="addr2Field" layoutX="294.0" layoutY="246.0" prefHeight="31.0" prefWidth="260.0" />
+      <TextField fx:id="cityField" layoutX="294.0" layoutY="285.0" prefHeight="31.0" prefWidth="260.0" />
+      <TextField fx:id="countryField" layoutX="294.0" layoutY="325.0" prefHeight="31.0" prefWidth="260.0" />
+      <TextField fx:id="zipField" layoutX="294.0" layoutY="365.0" prefHeight="31.0" prefWidth="260.0" />
+      <TextField fx:id="phoneNumberField" layoutX="294.0" layoutY="405.0" prefHeight="31.0" prefWidth="260.0" />
+      <Button id="acceptButton" onAction="#handleButtonAction" layoutX="294.0" layoutY="455.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="101.0" text="Accept" />
+      <Button id="cancelButton" onAction="#handleButtonAction" layoutX="453.0" layoutY="455.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="101.0" text="Cancel" />
+   </children>
+</AnchorPane>

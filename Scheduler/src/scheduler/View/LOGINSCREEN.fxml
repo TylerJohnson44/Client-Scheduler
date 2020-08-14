@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduler.Controller.LoginScreenController">
+   <children>
+      <Button fx:id="loginButton" onAction="#handleButtonAction" layoutX="268.0" layoutY="252.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="187.0" text="Login" />
+      <TextField fx:id="usernameField" layoutX="268.0" layoutY="126.0" />
+      <TextField fx:id="passwordField" layoutX="268.0" layoutY="200.0" />
+      <Label fx:id="usernameLabel" layoutX="168.0" layoutY="131.0" text="Username" />
+      <Label layoutX="170.0" layoutY="205.0" text="Password" />
+      <Separator layoutX="46.0" layoutY="75.0" prefHeight="5.0" prefWidth="495.0" />
+      <Separator layoutX="46.0" layoutY="320.0" prefHeight="5.0" prefWidth="495.0" />
+   </children>
+</AnchorPane>

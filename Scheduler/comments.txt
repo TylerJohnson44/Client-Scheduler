@@ -1,0 +1,38 @@
+
+
+->Filtering by week or month is done at the appointment table
+
+How to filter:
+Select date with datepicker
+Select proper dropdown week or month
+
+If week is chosen it will get every appointment from the day chosen till next week on that day, so day chosen to (day chosen + 7) inclusive
+If month is chosen it will get every appointment from the start date to the end of the month that date lies inclusive
+
+If you want to reset the table click clear and it will return with all appointments
+
+The title column/field in the appointment area of the application works as the description field
+
+On the appointment screen searching will search by title (or in other words, description)
+On the customer screen searching will search by name
+
+To reset a search simply remove all text from search field and click search
+
+->I use both multicatch and regular try/catch exception control
+
+
+Reports are generated and saved inside working directory under filenames below, it will append rather than create a new one
+->Types/Month generates count of all appointments from the beginning of the month you are in, and 12 months out and places it into a file named: 'reports-types-month.log'
+->Appointments/Month generates total appointments across all users for the current month and 12 months out, this would be useful in a real world situation to see if you can cut back on staff/require more outputs to file named: 'reports-count-all.log'  
+->Each Consultant generates schedules for each consultant from the current date to 2 weeks out, it doesn't make much sense to generate any more than 2 weeks because, more than likely, we wont have many appointments out that far, and even if we do they are subject to change. file name 'reports-by-user.log'
+
+->There are several lambdas in the initialization methods for my customer screen and appointment screen, Line 99 in "appointmentController.java", line 57 in "customerScreenController.java"
+
+An auto-increment was added to the appointmentId in the appointment table so that we can let SQL handle new appointments, it doesn't make any sense not to.
+
+There are currently 3 users in the the table; test, test2, john
+All of the users have the same password as the username
+
+A TextField was used for the login form password area simply so that the user or tester(you) can see what you're typing in for the password. It could easily be changed if needed.
+
+Customers can only be deleted after all of their appointments are cleared

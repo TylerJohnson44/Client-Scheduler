@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="784.0" prefWidth="1247.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduler.Controller.AppointmentScreenController">
+   <children>
+      <TableView fx:id="appointmentTable" layoutX="48.0" layoutY="58.0" prefHeight="613.0" prefWidth="1154.0">
+         <columns>
+            <TableColumn id="titleColumn" fx:id="titleColumn" prefWidth="128.0" text="Title" />
+            <TableColumn id="locationColumn" fx:id="locationColumn" prefWidth="186.0" text="Location" />
+            <TableColumn id="startTimeColumn" fx:id="startTimeColumn" prefWidth="198.0" text="Start Time" />
+            <TableColumn id="endTimeColumn" fx:id="endTimeColumn" prefWidth="209.0" text="End Time" />
+            <TableColumn id="contactColumn" fx:id="contactColumn" prefWidth="239.0" text="Contact " />
+            <TableColumn id="typeColumn" fx:id="typeColumn" prefWidth="193.0" text="Type" />
+         </columns>
+      </TableView>
+      <Button id="searchButton" layoutX="48.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Search" />
+      <TextField id="searchField" fx:id="searchField" layoutX="126.0" layoutY="14.0" prefHeight="31.0" prefWidth="342.0" />
+      <Button id="addButton" layoutX="48.0" layoutY="695.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="51.0" prefWidth="115.0" text="Add" />
+      <Button id="modifyButton" layoutX="196.0" layoutY="695.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="51.0" prefWidth="115.0" text="Modify" />
+      <Button id="deleteButton" layoutX="344.0" layoutY="695.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="51.0" prefWidth="115.0" text="Delete" />
+      <Button id="backButton" layoutX="1087.0" layoutY="695.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="51.0" prefWidth="115.0" text="Main Menu" />
+      <DatePicker fx:id="filterDatePicker" layoutX="487.0" layoutY="14.0" />
+      <ComboBox fx:id="filterCombo" layoutX="772.0" layoutY="14.0" prefWidth="150.0" />
+      <Label layoutX="714.0" layoutY="14.0" prefHeight="31.0" prefWidth="54.0" text="Filter By" />
+      <Button fx:id="filterButton" onAction="#handleButtonAction" layoutX="929.0" layoutY="14.0" mnemonicParsing="false" text="Filter" />
+      <Button fx:id="clearButton" onAction="#handleButtonAction" layoutX="989.0" layoutY="14.0" mnemonicParsing="false" text="Clear" />
+   </children>
+</AnchorPane>
